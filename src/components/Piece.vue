@@ -6,16 +6,20 @@
 
 <script lang='ts'>
 import { defineComponent } from 'vue';
-import Piece from '@/scripts/Piece';
+// import Piece, { King, Queen } from '@/scripts/Pieces';
 
 export default defineComponent({
   name: 'Piece',
   props: {
-    Piece: {
-      type: Piece,
+    piece: {
+      type: Object,
       required: true
     }
-
+  },
+  methods: {
+    getImage() {
+      
+    }
   }
 });
 </script>
